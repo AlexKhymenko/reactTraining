@@ -10,7 +10,7 @@ class AppComponent extends React.Component {
   render() {
     return (
       <div>
-        <img src="{yeomanImage}"/>
+        <img src={yeomanImage} alt="nice" />
         <span>{this.props.name}</span>
       </div>
     )

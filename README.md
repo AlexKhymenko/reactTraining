@@ -1,2 +1,2 @@
 # reactTraining
-This project were created to understand React.js Basic from scratch
+This project was created to understand React.js Basic from scratch.
