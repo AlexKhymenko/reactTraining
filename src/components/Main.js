@@ -8,9 +8,8 @@ let yeomanImage = require('../images/yeoman.png');
 class AppComponent extends React.Component {
 
   render() {
-    React.Children.forEach(this.props.children, function(child){
-      console.log(child)
-    });
+    var count = React.Children.count(this.props.children);
+    console.log('count', count);
     return (
       <div>
         {this.props.name}
