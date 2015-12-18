@@ -8,7 +8,7 @@ let yeomanImage = require('../images/yeoman.png');
 class AppComponent extends React.Component {
 
   render() {
-    React.Children.map(this.props.children, function(child){
+    React.Children.forEach(this.props.children, function(child){
       console.log(child)
     });
     return (
