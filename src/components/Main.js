@@ -7,12 +7,11 @@ let yeomanImage = require('../images/yeoman.png');
 
 class AppComponent extends React.Component {
 
+
   render() {
-    var count = React.Children.only(this.props.children);
-    console.log('child', count);
     return (
       <div>
-        {this.props.name}
+        {this.props.name} + {this.props.surname}
       </div>
     );
     //Working with this.props and image
