@@ -7,7 +7,7 @@
 // import TestUtils from 'react-addons-test-utils';
 import createComponent from 'helpers/shallowRenderHelper';
 
-import StoreComponent from 'components//storeComponent.js';
+import StoreComponent from 'components//store.js';
 
 describe('StoreComponent', () => {
     let component;
