@@ -4,7 +4,8 @@ import React from 'react';
 
 require('styles/src/components/Test.less');
 
-class CreateAccount extends React.Component {
+class SignIn extends React.Component {
+
   render() {
     return (
      <div>
@@ -20,7 +21,7 @@ class CreateAccount extends React.Component {
          Confirm password
          <input type="text" id="confirmPassword"/>
        </label>
-       <button id="signIn" onClick="this.props.onAuthComplete.bind(null, this._createAccount)">
+       <button id="signIn" onClick={this.props.onAuthComplete.bind(null, this._createAccount)}>
          Sign In
        </button>
      </div>
@@ -35,4 +36,4 @@ class CreateAccount extends React.Component {
 // TestComponent.propTypes = {};
 // TestComponent.defaultProps = {};
 
-export default CreateAccount;
+export default SignIn;

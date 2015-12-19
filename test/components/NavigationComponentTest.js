@@ -7,16 +7,16 @@
 // import TestUtils from 'react-addons-test-utils';
 import createComponent from 'helpers/shallowRenderHelper';
 
-import TestComponent from 'components/src/components/createAccount.js';
+import NavigationComponent from 'components//navigation.js';
 
-describe('TestComponent', () => {
+describe('NavigationComponent', () => {
     let component;
 
     beforeEach(() => {
-      component = createComponent(TestComponent);
+      component = createComponent(NavigationComponent);
     });
 
     it('should have its component name as default className', () => {
-      expect(component.props.className).to.equal('test-component');
+      expect(component.props.className).to.equal('navigation-component');
     });
 });

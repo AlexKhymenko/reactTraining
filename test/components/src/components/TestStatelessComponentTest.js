@@ -7,7 +7,7 @@
 // import TestUtils from 'react-addons-test-utils';
 import createComponent from 'helpers/shallowRenderHelper';
 
-import TestStatelessComponent from 'components/src/components/TestStatelessComponent.js';
+import TestStatelessComponent from 'components/src/components/signIn.js';
 
 describe('TestStatelessComponent', () => {
     let component;
