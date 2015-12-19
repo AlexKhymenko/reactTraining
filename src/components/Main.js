@@ -9,19 +9,24 @@ class AppComponent extends React.Component {
 
 
   render() {
-    return (
-      <div>
-        {this.props.name} + {this.props.surname}
-      </div>
-    );
-    //Working with this.props and image
-    /*return (
-      <div>
-        <img src={yeomanImage} alt="nice" />
-        <span>{this.props.name}</span>
-      </div>
-    )*/
-
+   return (
+     <div>
+       <label htmlFor="username">
+         Username
+         <input type="text" id="username"/>
+       </label>
+       <label htmlFor="password">
+         Password
+         <input type="text" id="password"/>
+       </label>
+       <button id="signIn" onClick="this.props.onAuthComplete.bind(null, this.doAuth)">
+          Sign In
+       </button>
+     </div>
+   )
+  }
+  _doAuth() {
+    return true;
   }
 }
 

@@ -4,20 +4,35 @@ import React from 'react';
 
 require('styles/src/components/Test.less');
 
-class TestComponent extends React.Component {
+class CreateAccount extends React.Component {
   render() {
     return (
-      <div className="test-component">
-        Please edit src/components/src/components//TestComponent.js to update this component!
-      </div>
+     <div>
+       <label htmlFor="username">
+         Username
+         <input type="text" id="username"/>
+       </label>
+       <label htmlFor="password">
+          Password
+         <input type="text" id="password"/>
+       </label>
+       <label htmlFor="confirmPassword">
+         Confirm password
+         <input type="text" id="confirmPassword"/>
+       </label>
+       <button id="signIn" onClick="this.props.onAuthComplete.bind(null, this._createAccount)">
+         Sign In
+       </button>
+     </div>
     );
   }
+
+  _createAccount() {
+    return true;
+  }
 }
-
-TestComponent.displayName = 'SrcComponentsTestComponent';
-
 // Uncomment properties you need
 // TestComponent.propTypes = {};
 // TestComponent.defaultProps = {};
 
-export default TestComponent;
+export default CreateAccount;
