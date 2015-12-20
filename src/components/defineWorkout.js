@@ -5,6 +5,9 @@ import React from 'react';
 require('styles//DefineWorkout.less');
 
 class DefineWorkout extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
       <div id="defineWorkout">

@@ -5,7 +5,9 @@ import React from 'react';
 require('styles/src/components/TestStateless.less');
 
 class Authentication extends React.Component {
-
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
       <div>

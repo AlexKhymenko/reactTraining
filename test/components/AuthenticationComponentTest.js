@@ -7,16 +7,16 @@
 // import TestUtils from 'react-addons-test-utils';
 import createComponent from 'helpers/shallowRenderHelper';
 
-import HistoryComponent from '../../src/components/HistoryComponent.js';
+import AuthenticationComponent from 'components//AuthenticationComponent.js';
 
-describe('HistoryComponent', () => {
+describe('AuthenticationComponent', () => {
     let component;
 
     beforeEach(() => {
-      component = createComponent(HistoryComponent);
+      component = createComponent(AuthenticationComponent);
     });
 
     it('should have its component name as default className', () => {
-      expect(component.props.className).to.equal('history-component');
+      expect(component.props.className).to.equal('authentication-component');
     });
 });

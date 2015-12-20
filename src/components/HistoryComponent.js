@@ -9,23 +9,24 @@ class ListItem extends React.Component {
     return <li>{this.props.name} - {this.props.result}</li>;
   }
 }
+var _mockHistory =
+  [
+    {
+      "name": "Murph",
+      "result": "32:18",
+      "notes": "painful, but fun"
+    },
+    {
+      "name": "Tabata Something Else",
+      "type": "reps",
+      "result": "421",
+      "notes": ""
+    }];
 
 class History extends React.Component {
-  var _mockHistory =
-    [
-      {
-        "name": "Murph",
-        "result": "32:18",
-        "notes": "painful, but fun"
-      },
-      {
-        "name": "Tabata Something Else",
-        "type": "reps",
-        "result": "421",
-        "notes": ""
-      }];
+
   render() {
-    var hist = this._mockHistory;
+    var hist = _mockHistory;
     var formatedLi = [];
     hist.forEach(function(object) {
       var histObj = {

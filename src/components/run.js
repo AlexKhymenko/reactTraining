@@ -8,5 +8,5 @@ var greeting = {
   surname: 'ggg'
 };
 // Render the main component into the dom
-ReactDOM.render(<App {...greeting}>
+ReactDOM.render(<App>
 </App>, document.getElementById('app'));

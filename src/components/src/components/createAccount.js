@@ -5,7 +5,9 @@ import React from 'react';
 require('styles/src/components/Test.less');
 
 class SignIn extends React.Component {
-
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
      <div>
